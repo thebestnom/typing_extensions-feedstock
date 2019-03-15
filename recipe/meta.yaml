@@ -10,7 +10,7 @@ source:
   sha256: fb2cd053238d33a8ec939190f30cfd736c00653a85a2919415cecf7dc3d9da71
 
 build:
-  number: 1000
+  number: 1001
 
 outputs:
   - name: {{ name }}
@@ -31,6 +31,7 @@ outputs:
     requirements:
       run:
         - {{ pin_subpackage(name, exact=True) }}
+        - python
     test:
       imports:
         - typing_extensions
