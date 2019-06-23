@@ -22,7 +22,7 @@ outputs:
         - pip
       run:
         - python
-        - typing >=3.6.2  # [py<35]
+        - typing >=3.7.4  # [py<35]
     test:
       imports:
         - typing_extensions
